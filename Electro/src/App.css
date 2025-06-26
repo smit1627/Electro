@@ -1,0 +1,15 @@
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.product-card {
+    width: 100%;
+    max-width: 300px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
