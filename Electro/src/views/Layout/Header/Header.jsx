@@ -6,7 +6,7 @@ const Header = () => {
             <div className="container">
                 <div className="row align-items-center">
                     {/* Logo */}
-                    <div className="col-12 col-md-2 text-center text-md-start mb-md-0 mb-2">
+                    <div className="col-12 col-md-2 text-center text-md-start mb-md-0 mb-23">
                         <a href="/" className="logo d-inline-block">
                             <img src="logo.png.webp" alt="Logo" className="img-fluid" />
                         </a>
