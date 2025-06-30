@@ -7,7 +7,9 @@ import 'swiper/css/pagination';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css';
-import ProductCard from './views/Components/ProductCard';
+import 'react-tooltip/dist/react-tooltip.css'
+
+import ProductCard from './views/Components/ProductCard/ProductCard';
 
 // const cardData = [
 //   { id: 1, title: "Card 1", img: "logo.png.webp" },
@@ -41,23 +43,26 @@ function App() {
     //     ))}
     //   </Swiper>
     // </div>
+    <>
 
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-3">
-          <ProductCard img="product01.png.webp" />
-        </div>
-        <div className="col-lg-3">
-          <ProductCard img="product03.png.webp" />
-        </div>
-        <div className="col-lg-3">
-          <ProductCard img="product04.png.webp" />
-        </div>
-        <div className="col-lg-3">
-          <ProductCard img="product05.png.webp" />
+
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-3">
+            <ProductCard img="product01.png.webp" />
+          </div>
+          <div className="col-lg-3">
+            <ProductCard img="product03.png.webp" />
+          </div>
+          <div className="col-lg-3">
+            <ProductCard img="product04.png.webp" />
+          </div>
+          <div className="col-lg-3">
+            <ProductCard img="product05.png.webp" />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
