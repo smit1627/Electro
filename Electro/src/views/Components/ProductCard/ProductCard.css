@@ -1,14 +1,7 @@
-:root {
-    --primary-color: #D10024;
-    --secondary-color: #1E1F29;
-    --border-color: #eee;
-    --hover-transition: 0.08s ease-in-out;
-}
-
-body,
-html {
+body {
     margin: 0;
     padding: 0;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 
 .product-card {
@@ -18,15 +11,14 @@ html {
     background-color: #fff;
     border: 1px solid var(--border-color);
     transition: border var(--hover-transition);
-    z-index: 0;
+    z-index: 1;
     overflow: visible;
 }
 
-.product-card::before {
+.product-card::after {
     content: '';
     position: absolute;
-    top: 99.82%;
-    bottom: 0;
+    top: 100%;
     left: 0;
     right: 0;
     height: 60px;
@@ -39,14 +31,12 @@ html {
 
 .product-card:hover {
     border: 2px solid var(--primary-color);
-    border-bottom: none;
 }
 
-.product-card:hover::before {
+.product-card:hover::after {
     transform: scaleY(1);
 }
 
-/* Add to Cart Button Container */
 .hover-cart-button {
     position: absolute;
     top: 100%;
@@ -61,12 +51,10 @@ html {
     transition: opacity 0.2s ease-in-out;
 }
 
-/* Show on hover */
 .product-card:hover .hover-cart-button {
     opacity: 1;
 }
 
-/* Button style */
 .button {
     background-color: var(--primary-color);
     color: white;
@@ -86,7 +74,7 @@ html {
     transition: all 0.3s ease;
 }
 
-.fa-cart-shopping {
+.cart-hidden {
     display: none;
     font-size: 12px;
     background-color: var(--primary-color);
@@ -208,4 +196,80 @@ html {
     font-size: 14px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        padding: 10px;
+    }
+
+    .product-card img {
+        max-height: 160px;
+    }
+
+    .product-card .product-name {
+        font-size: 14px;
+    }
+
+    .product-card .price {
+        font-size: 18px;
+    }
+
+    .product-card .price-old {
+        font-size: 12px;
+    }
+
+    .button {
+        padding: 6px 20px;
+        font-size: 12px;
+    }
+
+    .button:hover {
+        padding: 4px 18px;
+    }
+
+    .actions {
+        padding: 10px 20px;
+        gap: 10px;
+    }
+
+    .actions i {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .hover-cart-button {
+        height: 50px;
+    }
+
+    .product-card::after {
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        padding: 10px;
+    }
+
+    .product-card img {
+        max-height: 140px;
+    }
+
+    .product-card .product-name {
+        font-size: 13px;
+    }
+
+    .button span {
+        font-size: 12px;
+    }
+
+    .button:hover span {
+        margin-left: 12px;
+    }
+
+    .product-card .rating i {
+        font-size: 12px;
+    }
 }

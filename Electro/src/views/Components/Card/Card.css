@@ -1,0 +1,51 @@
+.laptop-collection {
+    position: relative;
+    width: 373px;
+    height: 250px;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    clip-path: polygon(0% 0%, 0% 0%, 90% 0%, 0% 150%);
+    background-color: rgba(209, 0, 35, 0.917);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.text-content {
+    color: #fff;
+}
+
+.text-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.shop-now {
+    margin-top: 10px;
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.shop-now span {
+    margin-left: 5px;
+}

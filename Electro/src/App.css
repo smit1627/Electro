@@ -1,6 +1,22 @@
-.swiper-slide {
-    display: flex;
-    justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #D10024;
+    --secondary-color: #1E1F29;
+    --border-color: #eee;
+    --hover-transition: 0.08s ease-in-out;
+    --navbar-color: "#8D99AE"
+}
+
+body,
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.swiper {
+    height: 588px;
+    margin: 0 auto;
+    /* border: 2px solid; */
 }
 
 .product-card {
@@ -11,5 +27,19 @@
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
+    }
+}
+
+@media (max-width: 596px) {
+    .swiper {
+        height: 449px;
+        /* border: 2px solid; */
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper {
+        height: 489px;
+        /* border: 2px solid; */
     }
 }

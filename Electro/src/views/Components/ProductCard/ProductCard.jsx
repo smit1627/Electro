@@ -28,12 +28,12 @@ const ProductCard = ({ img }) => {
             <hr />
             <div className="actions d-flex justify-content-center">
                 <i className="far fa-heart" data-tooltip-id="my-tooltip" data-tooltip-content="ADD TO WISHLIST"></i>
-                <i className="fas fa-shopping-cart" data-tooltip-id="my-tooltip" data-tooltip-content="ADD TO CART"></i>
+                <i className="fas fa-arrows-turn-to-dots" data-tooltip-id="my-tooltip" data-tooltip-content="COMPARE"></i>
                 <i className="far fa-eye" data-tooltip-id="my-tooltip" data-tooltip-content="VIEW MORE"></i>
             </div>
             <div className="hover-cart-button">
                 <button className="button">
-                    <i className="fa-solid fa-cart-shopping"></i>
+                    <i className="fa-solid fa-cart-shopping cart-hidden"></i>
                     <span>
                         Add to Cart
                     </span>
